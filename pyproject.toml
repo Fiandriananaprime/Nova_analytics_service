@@ -1,0 +1,21 @@
+[project]
+name = "nova-analytics-service"
+version = "0.1.0"
+description = "Analytics and Machine Learning service for NovaMarket"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi==0.141.1",
+    "uvicorn==0.53.0",
+    "pika==1.4.4",
+    "psycopg[binary]==3.3.6",
+    "sqlalchemy==2.0.54",
+    "polars==1.44.2",
+    "numpy==2.5.3",
+    "scikit-learn==1.9.1",
+    "pydantic-settings==2.15.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+]
